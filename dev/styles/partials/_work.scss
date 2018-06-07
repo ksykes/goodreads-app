@@ -1,0 +1,89 @@
+.workGallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 1.5rem;
+	grid-row-gap: 1.5rem;
+}
+
+.workItem {
+	width: calc((70vw - 3rem) / 3);
+	height: calc((70vw - 3rem) / 3);
+}
+
+.laundryThumb, .overThumb, .potterThumb, .floralThumb, .beautyThumb, .cowThumb {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.laundryThumb {
+	background-image: url(../../assets/thumbnails/laundry_thumbnail.png);
+}
+
+.overThumb {
+	background-image: url(../../assets/thumbnails/over_thumbnail.png);
+}
+
+.potterThumb {
+	background-image: url(../../assets/thumbnails/pottergalore_thumbnail.png);
+}
+
+.floralThumb {
+	background-image: url(../../assets/thumbnails/floral_thumbnail.png);
+}
+
+.beautyThumb {
+	background-image: url(../../assets/thumbnails/beauty_thumbnail.png);
+}
+
+.cowThumb {
+	background-image: url(../../assets/thumbnails/cow_thumbnail.png);
+}
+
+.workItemOverlay {
+	width: 100%;
+	height: 100%;
+	padding: 0.75rem;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: $overlay;
+	&:hover .workDescription {
+		display: flex;
+	}
+	&:hover .workTitle {
+		display: none;
+	}
+}
+
+.workDescription {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: $lightBlue;
+	padding: 0.75rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.viewLive button {
+	background: none;
+	border: 2px solid $darkBlue;
+	font-size: 1rem;
+	letter-spacing: 0.1rem;
+	font-family: $sansSerif;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: $white;
+	padding: 0.5rem;
+	border-radius: 3px;
+	&:hover {
+		background: $darkBlue;
+	}
+}

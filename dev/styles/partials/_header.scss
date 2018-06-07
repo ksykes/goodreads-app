@@ -1,0 +1,36 @@
+header {
+	background: url(../../assets/IMG_1656.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	// width: 100vw;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+header .overlay {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: $fadedWhite;
+}
+
+.hero {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	background-color: $heroColor;
+	height: 100vh;
+	font-family: 'Cantata One', serif;
+}
+
+.hero .outerWrapper {
+	text-align: center;
+}
