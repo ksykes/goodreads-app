@@ -2,12 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>React Boilerplate</title>
+	<title>Goodreads App</title>
 	<link rel="stylesheet" type="text/css" href="/public/styles/style.css">
 </head>
 <body>
-	<div id="app">
-	</div>
-	<script src="/public/scripts/app.js"></script>
+	<form id="form1" runat="server">
+		<h2>Get Book Information</h2>
+		Author: <input type="text" id="authorTextbox" value="Patrick Rothfuss" /><br />
+		Title: <input type="text" id="titleTextbox" value="The Name of the Wind" /><br />
+		<input type="button" value="Get Book Information" id="getButton" onclick='getBookInformation()' />
+		<br/><br/>
+		<div id="DataContainer"></div>
+	</form>
 </body>
 </html>
