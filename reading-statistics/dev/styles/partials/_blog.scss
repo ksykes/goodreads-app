@@ -1,0 +1,50 @@
+.blog h2 {
+  color: $darkBlue;
+  text-align: center;
+}
+
+#json-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-item {
+  margin-bottom: 2rem;
+  padding-right: 1rem;
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.blog-content {
+  h3 {
+    font-size: 1.25rem;
+  }
+  h4 {
+    display: none;
+  }
+}
+
+.img-blog {
+  max-width: 100%;
+}
+
+.post-content {
+  display: none;
+}
+
+.medium {
+  display: block;
+  margin: 0 auto;
+  font-family: $sansSerif;
+  font-size: 1.25rem;
+  text-transform: lowercase;
+  background: $darkBlue;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+}

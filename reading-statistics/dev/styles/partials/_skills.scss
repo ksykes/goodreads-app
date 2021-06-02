@@ -1,0 +1,34 @@
+//.languages, .tools 
+.skillsGallery {
+	text-align: center;
+	h4 {
+		width: 100%;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		list-style: none;
+		display: inline-block;
+		i {
+			font-size: 4rem;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		p {
+			display: none;
+		}
+	}
+}
+
+.tools {
+	margin-top: 4rem;
+}
+
+// .languagesList, .toolsList 
+.skillsList {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}

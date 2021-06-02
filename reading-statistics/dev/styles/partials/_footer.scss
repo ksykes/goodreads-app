@@ -1,0 +1,49 @@
+footer .wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-content: flex-end;
+	.contact {
+		width: 33%;
+		display: inline-block;
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: column;
+		align-items: center;
+	}
+	.contact3 {
+		font-size: 0;
+	}
+	.contact2 ul {
+		margin: 0;
+		padding: 0;
+		li {
+			list-style: none;
+		}
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	footer .wrapper {
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+	footer .wrapper .contact {
+		width: 50%;
+	}
+	footer .wrapper .contact1 {
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+	footer .wrapper .contact2 {
+		justify-content: center;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 515px) {
+}

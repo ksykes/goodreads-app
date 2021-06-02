@@ -1,0 +1,35 @@
+body {
+	font-size: 62.5%;
+	background-color: $background;
+}
+
+.outerWrapper {
+	max-width: 1920px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 4rem;
+}
+
+.wrapper {
+	max-width: 1170px;
+	width: 70%;
+	// margin: 0 auto;
+	margin: 2rem auto;
+	padding-bottom: 2rem;
+	border-bottom: 2px dashed $lightBlue;
+}
+
+.fixed {
+	position: fixed;
+	top: 0;
+	width: 70%;
+	max-width: 1170px;
+	z-index: 9999;
+}
+
+#error {
+	margin: 9rem 0;
+	h3, p {
+		width: 100%;
+	}
+}
